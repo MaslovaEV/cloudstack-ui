@@ -4,7 +4,7 @@ Firewall
 --------------
 .. Contents::
 
-The *Virtual Machines* -> *Firewall* section contains templates to create a security group for a virtual machine and shared security groups used for virtual machines of other users.
+The *Virtual Machines* -> *Firewall* section displays templates to create a security group for a virtual machine and shared and private security groups used by virtual machines.
 
 .. figure:: _static/Firewall_List816-1.png
 
@@ -14,9 +14,9 @@ The *Virtual Machines* -> *Firewall* section contains templates to create a secu
 
 A custom security group template can be created via the UI. Find more information on how to create a custom security group template at :ref:`Create_FTemplate`.
 
-Upon VM creation the system creates a new security group for a VM on the base of templates (if they exist). Next, when the user changes the rules for a certain virtual machine, it does not affect other machines. These changed rules make a **private security group** used for that virtual machine only. 
+Upon VM creation, the system uses a default security group (if it is defined in the `configuration file <https://github.com/bwsw/cloudstack-ui/blob/master/config-guide.md#default-security-group-name>`_). This is a **shared security group**. Shared groups are used by several VMs. Changes of rules in them may affect other VMs. If no default group is defined in the configurations, a user can select a group from the list or create a new group.  
 
-The second way is to use a **shared security group** for your virtual machine. Shared groups are used by several VMs. Changes of rules in them may affect other VMs. 
+This may be reasonable to create a **private security group** for a certain virtual machine. A private security group is used by that virtual machine only. Any changes made to its rules will not affect other machines.  
 
 Users can manage security group rules in two modes: a "view" mode with filtering by types and protocols and an “edit” mode. Security groups editing is available when switching from "view" mode to "editing" mode. If the group is shared, the user is warned that changes will affect other VMs using this group. This behavior allows avoiding undesirable changes for other VMs.
 
