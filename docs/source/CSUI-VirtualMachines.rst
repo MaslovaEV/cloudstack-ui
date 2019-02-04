@@ -9,7 +9,7 @@ Virtual Machines
 
 In this section you can perform actions over a VM that is create, start, stop, delete it. Besides, here you can configure the machine editing its service offering parameters, group, firewall rules. Finally, you can access a VM selecting the most appropriate way. We support three options for accessing a VM: via the console, SSH or HTTP.
 
-.. _static/VMs_Management.png
+.. figure:: _static/VMs_Management.png
 
 Below you will find the detailed information on the aforementioned options for VM management via CloudStack-UI.
 
@@ -68,7 +68,7 @@ Creating a new VM in CloudStack-UI is a one-step action. You can select options 
 
 Please, note that a virtual machine is created with a root disk so you do not need to add any volume at the VM creation step. If necessary, you can add a data disk to the VM later.
 
-.. _static/VMs_CreationOverview.png
+.. figure:: _static/VMs_CreationOverview.png
 
 To create a new VM click the "Create" button |create icon| at the bottom-right corner. 
 
@@ -413,6 +413,7 @@ It allows performing the following actions with the VM:
     This plugin is convenient for dynamic monitoring of VM performance. Find more information about it in the `official documentation <https://github.com/bwsw/cloudstack-ui/wiki/Pulse-Plugin>`_. Pulse plugin deployment instructions can be found at the :ref:`Pulse_Plugin` page.
 
     .. note:: Please, note, when performing one of the actions from the list, other actions in this list are disabled until the action in progress finishes.
+    
 .. _VM_Info:
 
 VM Details Sidebar
