@@ -6,7 +6,7 @@ Storage
 
 In the *Virtual Machines* -> *Storage* section, you can create and manage drives for virtual machines. Here you can add new disks, create templates and snapshots of a volume, view the list of snapshots for each volume.
 
-.. _static/Storage_VolumeManagement.png
+.. figure:: _static/Storage_VolumeManagement.png
 
 
 Drive list
@@ -53,7 +53,7 @@ Create New Volume
 
 In the *Storage* section you can create new volumes. Please, note that if you are aimed at creation of a virtual machine, we do not recommend starting from adding new disks to the system. You can go right to the *Virtual Machines* section and create a VM. A root disk will be cerated for the VM automatically.
 
-.. _static/CreateVMwithRD.png
+.. figure:: _static/CreateVMwithRD.png
  
 If necessary, you can create a data disk and attach it to your VM. By clicking the "Create" button |create icon| in the bottom-right corner you will open a creation form. Please, make sure you definitely need an additional disk as it takes resources and requires expenses. If you do not have disks yet, when clicking "Create", a dialog box will ask you if you surely want to create a drive. Confirm your creation action by clicking "CONTINUE":
 
