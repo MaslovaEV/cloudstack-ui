@@ -4,7 +4,13 @@ Firewall
 --------------
 .. Contents::
 
-The *Virtual Machines* -> *Firewall* section displays templates to create a security group for a virtual machine and shared and private security groups used by virtual machines.
+The *Virtual Machines* -> *Firewall* section allows managing security groups that are used for isolating traffic to virtual machines. 
+
+.. figure:: _static/Firewall_Overview.png
+
+Read more about security groups in the `official documentation <http://docs.cloudstack.apache.org/en/4.11.2.0/adminguide/networking/security_groups.html>`_ of CloudStack.
+
+In this UI section, a user can see and manage firewall templates, shared and private security groups.
 
 .. figure:: _static/Firewall_List816-1.png
 
@@ -14,9 +20,11 @@ The *Virtual Machines* -> *Firewall* section displays templates to create a secu
 
 A custom security group template can be created via the UI. Find more information on how to create a custom security group template at :ref:`Create_FTemplate`.
 
-Upon VM creation, the system uses a default security group (if it is defined in the `configuration file <https://github.com/bwsw/cloudstack-ui/blob/master/config-guide.md#default-security-group-name>`_). This is a **shared security group**. Shared groups are used by several VMs. Changes of rules in them may affect other VMs. If no default group is defined in the configurations, a user can select a group from the list or create a new group.  
+Upon VM creation, a user applies templates (if they exist) to create a new security group for a VM. These rules make a **private security group** used for that virtual machine only. Thus, when a user changes the rules for a certain virtual machine, it does not affect other machines. 
 
-This may be reasonable to create a **private security group** for a certain virtual machine. A private security group is used by that virtual machine only. Any changes made to its rules will not affect other machines.  
+The second way is to use a **shared security group** for your virtual machine. Shared groups are used by several VMs. Changes of rules in them may affect other VMs. 
+
+A default security group can be defined for the account. It will be preselected for each new virtual machine. Please, read the `configuration guide <https://github.com/bwsw/cloudstack-ui/blob/master/config-guide.md#default-security-group-name>`_ to find more information on how to set up a default security group.  
 
 Users can manage security group rules in two modes: a "view" mode with filtering by types and protocols and an “edit” mode. Security groups editing is available when switching from "view" mode to "editing" mode. If the group is shared, the user is warned that changes will affect other VMs using this group. This behavior allows avoiding undesirable changes for other VMs.
 
