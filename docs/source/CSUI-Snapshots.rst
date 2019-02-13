@@ -15,7 +15,7 @@ Virtual Machine snapshots allow users to preserve the VM data volumes and its CP
 .. figure:: _static/VMSnaps_Overview.png
    :align: center
 
-Currently we support VM snapshots for the KVM hypervisor only. For more information about Virtual Machine snapshots check out the `official documentation <http://docs.cloudstack.apache.org/en/4.11.1.0/adminguide/virtual_machines.html?highlight=snapshots#virtual-machine-snapshots>`_.
+Currently, we support VM snapshots for the KVM hypervisor only. For more information about Virtual Machine snapshots check out the `official documentation <http://docs.cloudstack.apache.org/en/4.11.1.0/adminguide/virtual_machines.html?highlight=snapshots#virtual-machine-snapshots>`_.
 
 .. Virtual Machine snapshots are currently under development!
 
@@ -146,7 +146,7 @@ Click "CANCEL" to cancel the volume creation.
 
 This action is available for Volume snapshots. It allows turning the volume back to the state of the snapshot. It is available to those snapshots that have a volume.
 
-In the dialog window confirm your action. Please, note, the virtual machine the volume is assigned to will be rebooted.
+In the dialog window, confirm your action. Please, note, the virtual machine the volume is assigned to will be rebooted.
 
 .. figure:: _static/Snapshots_Actions_Revert.png
 
