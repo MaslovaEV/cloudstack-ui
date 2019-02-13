@@ -9,7 +9,7 @@ Virtual Machines
 
 In this section you can perform actions over a VM that is create, start, stop, delete it. Besides, here you can configure the machine editing its service offering parameters, group, firewall rules. Finally, you can access a VM selecting the most appropriate way. We support three options for accessing a VM: via the console, SSH or HTTP.
 
-.. figure:: _static/VMs_Management.png
+.. figure:: _static/VM_Management.png
 
 Below you will find the detailed information on the aforementioned options for VM management via CloudStack-UI.
 
