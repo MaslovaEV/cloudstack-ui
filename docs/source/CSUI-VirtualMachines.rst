@@ -7,11 +7,11 @@ Virtual Machines
 
 *Virtual Machines* is the starting section. Here and in all other views we have implemented a “one-step” approach, and we also made it work without moving from view to view. So all actions on VMs can be managed from one screen view.
 
-In this section you can perform actions over a VM that is create, start, stop, delete it. Besides, here you can configure the machine editing its service offering parameters, group, firewall rules. Finally, you can access a VM selecting the most appropriate way. We support three options for accessing a VM: via the console, SSH or HTTP.
+In this section, you can perform actions over a VM, that is to create, start, stop, delete it. Besides, here you can configure the machine editing its service offering parameters, group, firewall rules. The UI allows monitoring the resource usage and viewing statistics of VM performance. Making a VM snapshot allows capturing the machine's CPU and memory state and easily revert the VM to the snapshot state. Finally, you can access a VM selecting the most appropriate way. We support three options for accessing a VM: via the console, SSH or HTTP. 
 
 .. figure:: _static/VM_Management.png
 
-Below you will find the detailed information on the aforementioned options for VM management via CloudStack-UI.
+Below, you will find the detailed information on the aforementioned options for VM management via CloudStack-UI.
 
 Virtual Machines List
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
