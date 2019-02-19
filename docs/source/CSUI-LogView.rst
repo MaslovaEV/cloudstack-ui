@@ -10,13 +10,13 @@ Log View Plugin
 Overview
 ----------------
 
-In the *Virtual Machines*-*View Logs* section a user can see VM logs. This section appears if the UI-plugin - *Log View* - is activated. This UI-plugin works together with the backend API plugin developed to process and view virtual machine logs. The version of the backend API plugin matches Apache CloudStack version that it is built for. The plugin is developed and tested only with Apache CloudStack 4.11.1 
+In the *Virtual Machines*-*View Logs* section, a user can see VM logs. This section appears if the UI-plugin - *Log View* - is activated. This UI-plugin works together with the backend API plugin developed to process and view virtual machine logs. The version of the backend API plugin matches Apache CloudStack version that it is built for. The plugin is developed and tested only with Apache CloudStack 4.11.1 
 
 In general, the plugins work as it is presented in the figure below.
 
 .. figure:: _static/OverviewDiagrams-LogView.png
 
-Machine logs are handled and delivered by ELK stack that includes Filebeat and Logstash for log exporting and Elastisearch as a storage. Via the UI plugin, a user defines parameters and requests the backend API plugin to get corresponding logs from the storage. The UI plugin displays the returned logs to the user.
+Machine logs are handled and delivered by ELK stack that includes Filebeat and Logstash for log exporting and Elastisearch as storage. Via the UI plugin, a user defines parameters and requests the backend API plugin to get corresponding logs from the storage. The UI plugin displays the returned logs to the user.
 
 To make the *View logs* section available in the UI, first deploy the backend API plugin and then activate the Log View UI-plugin via the ``config.json`` file. See deployment instructions below.
 
@@ -34,7 +34,7 @@ To enable the Log View plugin you need to:
 View Logs 
 -------------------------
 
-After successful deployment you can see the *View logs* section under the *Virtual Machines* menu in UI. In this section you can view the log files for a defined period of time or in a real-time mode. To view logs you should specify an account (for Administrators), a VM for which you wish to see the logs, and a log file to view the logs from. More details are provided below.
+After successful deployment, you can see the *View logs* section under the *Virtual Machines* menu in UI. In this section, you can view the log files for a defined period of time or in a real-time mode. To view logs, you should specify an account (for Administrators), a VM for which you wish to see the logs, and a log file to view the logs from. More details are provided below.
 
 Filtering Logs
 '''''''''''''''''''''''''
@@ -70,6 +70,7 @@ The set filtering parameters are saved to user tags. That means, if you log out 
 
 View Logs List
 ''''''''''''''''''''''''
+
 By clicking "SHOW LOGS", a user can view log files corresponding to the filtering parameters. Logs are listed in a chronological order from the earliest till the latest. 
 
 By default, the system shows logs for the last day. 
