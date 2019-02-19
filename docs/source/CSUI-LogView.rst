@@ -10,9 +10,15 @@ Log View Plugin
 Overview
 ----------------
 
-In the *Virtual Machines*-*View Logs* section a user can see VM logs. This section appears if the UI-plugin - Log View - is activated. This UI-plugin works together with the backend API plugin developed to process and view virtual machine logs which are handled by ELK and delivered to the storage by Filebeat. The version of the backend API plugin matches Apache CloudStack version that it is built for. The plugin is developed and tested only with Apache CloudStack 4.11.1
+In the *Virtual Machines*-*View Logs* section a user can see VM logs. This section appears if the UI-plugin - *Log View* - is activated. This UI-plugin works together with the backend API plugin developed to process and view virtual machine logs. The version of the backend API plugin matches Apache CloudStack version that it is built for. The plugin is developed and tested only with Apache CloudStack 4.11.1 
 
-To make the *View logs* section available, first deploy the backend API plugin and then activate the Log View UI-plugin via the ``config.json`` file. See deployment instructions below.
+In general, the plugins work as it is presented in the figure below.
+
+.. figure:: _static/OverviewDiagrams-LogView.png
+
+Machine logs are handled and delivered by ELK stack that includes Filebeat and Logstash for log exporting and Elastisearch as a storage. Via the UI plugin, a user defines parameters and requests the backend API plugin to get corresponding logs from the storage. The UI plugin displays the returned logs to the user.
+
+To make the *View logs* section available in the UI, first deploy the backend API plugin and then activate the Log View UI-plugin via the ``config.json`` file. See deployment instructions below.
 
 Deployment Instructions
 -------------------------
