@@ -16,7 +16,13 @@ The extension uses two backend plugins:
 
 * the *Resource Limits Management* backend plugin that extends CloudStack API with additional endpoints.
 
-After the backend plugins are deployed and configured the Resource Limits Management UI-plugin can be activated and configured via the configuration file (see the `configuration guide <https://github.com/bwsw/cloudstack-ui/blob/master/config-guide.md#resource-limits-plugin>`_). Once it is activated, users and administrators get access to resource limits and quotas management via UI.
+In general, the new plugin works as it is presented in the figure below:
+
+.. figure:: _static/OverviewDiagrams-RLM.png
+
+The *µAPI Gateway* plugin gets installed to CloudStack. The *Resource Limits Management* backend extension is plugged into CloudStack via *µAPI Gateway* and creates new endpoints. The *Resource Limits Management* UI plugin uses them to send user's requests for resource limit changes to CloudStack. The *Resource Limits Management* backend plugin connects to CloudStack to check available resources and update resource limits. It also provides the resource usage information for the billing system.
+
+Below, you can find an overview on deploying the Resource Limits Management plugin.
 
 Plugin Deployment
 -------------------
@@ -27,7 +33,7 @@ To enable the Resource Limits Management UI-plugin you will need to:
 
 1. Install and configure the *µAPI Gateway* backend plugin in CloudStack.
 2. Deploy the *Resource Limits Management* backend plugin.
-3. Enable and configure the *Resource Limits Management* UI extension via the `config.json` file.
+3. Enable and configure the *Resource Limits Management* UI extension via the ``config.json`` file (see the `configuration guide <https://github.com/bwsw/cloudstack-ui/blob/master/config-guide.md#resource-limits-plugin>`_). 
 
 Managing Resource Limits via UI
 ----------------------------------------
