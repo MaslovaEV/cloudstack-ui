@@ -4,7 +4,7 @@ Firewall
 --------------
 .. Contents::
 
-The *Virtual Machines* -> *Firewall* section allows managing security groups that are used for isolating traffic to virtual machines. 
+The *Virtual Machines* -> *Firewall* section allows managing security groups that are used for isolating traffic to virtual machines. A security group is a group of VMs that filter their incoming and outgoing traffic according to a set of rules. 
 
 .. figure:: _static/Firewall_Overview.png
 
