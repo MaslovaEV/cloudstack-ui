@@ -13,6 +13,7 @@ In the *Virtual Machines*-*View Logs* section, a user can see VM logs. This sect
 In general, the plugins work as it is presented in the figure below.
 
 .. figure:: _static/OverviewDiagrams-LogView.png
+   :align: center
 
 Machine logs are handled and delivered by ELK stack that includes Filebeat and Logstash for log exporting and Elastisearch as storage. Via the UI plugin, a user defines parameters and requests the backend API plugin to get corresponding logs from the storage. The UI plugin displays the returned logs to the user.
 
