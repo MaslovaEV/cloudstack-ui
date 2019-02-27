@@ -14,7 +14,7 @@ In general, the plugin works as it is presented in the figure below:
 
 .. figure:: _static/Pulse_Overview.png
 
-A sensor connects to a virtual machine, collects its performance statistics via the Libvirt API, and stores it to InfluxDB datastore. Users interact with the plugin via CloudStack-UI. They specify parameters to build reports. These parameters are sent to RESTful server that gets corresponding data from the InfluxDB datastore and returns it to users in the form of convenient visual charts.
+A sensor connects to a virtual machine, collects its performance statistics via the Libvirt API, and stores it in InfluxDB datastore. Users interact with the plugin via CloudStack-UI. They specify parameters to build reports. These parameters are sent to RESTful server that gets corresponding data from the InfluxDB datastore and returns it to UI where it is presented as convenient visual charts.
 
 Pulse allows users of Apache CloudStack to monitor current and previous operational states of virtual machines. The plugin supports various view scales like minutes, hours, days and enables data overlays to monitor peak and average values.
 
