@@ -15,7 +15,7 @@ In general, the plugins work as it is presented in the figure below.
 .. figure:: _static/OverviewDiagrams-LogView.png
    :align: center
 
-Machine logs are handled and delivered by ELK stack that includes Filebeat and Logstash for log exporting and Elastisearch as storage. Via the UI plugin, a user defines parameters and requests the backend API plugin to get corresponding logs or log files from the storage. The UI plugin displays the returned logs to the user.
+Machine logs are handled and delivered by ELK stack that includes Filebeat and Logstash for log exporting and Elastisearch as storage. Via the CloudStack-UI, a user defines parameters for filtering logs. The *Log View* UI-plugin use these parameters to request the backend API plugin to get corresponding logs or log files from the storage. The UI plugin displays the returned logs to the user.
 
 To make the *View logs* section available in the UI, first deploy the backend API plugin and then activate the Log View UI-plugin via the ``config.json`` file. See deployment instructions below.
 
